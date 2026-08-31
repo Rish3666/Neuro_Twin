@@ -1,9 +1,11 @@
 # NeuroTwin — AI Cognitive & Memory Companion
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.141+-009688.svg?style=flat&logo=FastAPI&logoColor=white)](https://fastapi.tiangolo.com)
+[![Groq Cloud](https://img.shields.io/badge/Groq-GPT--OSS--120B%20%7C%20Whisper-F05A28.svg?style=flat)](https://groq.com)
 [![Qdrant Cloud](https://img.shields.io/badge/Qdrant-Vector%20Database-DC2626.svg?style=flat&logo=qdrant&logoColor=white)](https://qdrant.tech)
 [![Supabase](https://img.shields.io/badge/Supabase-Cloud%20Postgres-3ECF8E.svg?style=flat&logo=supabase&logoColor=white)](https://supabase.com)
-
+[![Android](https://img.shields.io/badge/Android-Jetpack%20Compose-3DDC84.svg?style=flat&logo=android&logoColor=white)](https://developer.android.com)
+[![React](https://img.shields.io/badge/React%2018-Vite%20%7C%20Three.js-61DAFB.svg?style=flat&logo=react&logoColor=black)](https://vitejs.dev)
 
 **NeuroTwin** is an end-to-end ambient AI cognitive and memory companion designed to support individuals with memory impairment (such as Alzheimer's and Dementia) and empower their caregivers.
 

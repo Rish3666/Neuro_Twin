@@ -1,9 +1,12 @@
+from app.services.dns_patch import apply_dns_patch
+apply_dns_patch()
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from app.config import settings
 from app.auth import APIKeyMiddleware
-from app.routers import health, frame, voice, people, memories, medicines, emergency, objects, ble, metrics, albums
+from app.routers import health, frame, voice, people, memories, medicines, emergency, objects, ble, metrics, albums, auth
 from app.services import json_store, people_store, supabase_sync
 
 app = FastAPI(
@@ -94,6 +97,7 @@ app.include_router(emergency.router, prefix=settings.API_V1_STR)
 app.include_router(objects.router, prefix=settings.API_V1_STR)
 app.include_router(ble.router, prefix=settings.API_V1_STR)
 app.include_router(albums.router, prefix=settings.API_V1_STR)
+app.include_router(auth.router, prefix=settings.API_V1_STR)
 app.include_router(metrics.router)  # /metrics is at root, not under /api/v1
 
 
